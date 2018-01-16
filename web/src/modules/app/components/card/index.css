@@ -28,6 +28,15 @@
     transition: all 0.3s ease;
 }
 
+.card.hide {
+    opacity: 0;
+     -webkit-transform: scale(2,2);
+    -moz-transform: scale(2,2);
+    -o-transform: scale(2,2);
+    -ms-transform: scale(2,2);
+    transform: scale(2,2);
+}
+
 .card p {
   text-align: center;
   font: 100px/200px Georgia, Times New Roman, serif;
