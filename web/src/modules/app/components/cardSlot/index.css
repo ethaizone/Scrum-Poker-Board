@@ -1,0 +1,10 @@
+.card_slot {
+    width: 150px;
+    height: 220px;
+    position: relative;
+    float: left;
+    padding: 3px;
+    border: 2px white dashed;
+    margin: 10px;
+    border-radius: 10px;
+}

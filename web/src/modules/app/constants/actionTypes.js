@@ -1,0 +1,5 @@
+export const SHOW_LOADING = 'app/SHOW_LOADING'
+export const HIDE_LOADING = 'app/HIDE_LOADING'
+export const SUCCESS = 'api/success'
+export const FAILURE = 'api/failure'
+export const RESET_MESSAGE = 'app/RESET_MESSAGE'

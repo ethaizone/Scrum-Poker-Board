@@ -1,0 +1,34 @@
+.card {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+}
+
+
+.card.grow:hover {
+    -webkit-box-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+    -webkit-transform: scale(1.07,1.07);
+    -moz-transform: scale(1.07,1.07);
+    -o-transform: scale(1.07,1.07);
+    -ms-transform: scale(1.07,1.07);
+    transform: scale(1.07,1.07);
+}
+
+.card.grow {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.card p {
+  text-align: center;
+  font: 100px/200px Georgia, Times New Roman, serif;
+}
