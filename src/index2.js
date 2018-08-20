@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 
 class IndexPage extends Component {
     componentDidMount() {
-        const socket = io('http://localhost:3421/socket', { path: '/myapp/socket.io' });
+        const socket = io('/socket', { path: '/myapp/socket.io' });
 
         socket.on('echo', function (data) {
             console.log(data)

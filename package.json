@@ -9,9 +9,11 @@
   "private": true,
   "dependencies": {
     "concurrently": "^3.6.1",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "http-proxy-middleware": "^0.18.0",
     "ngrok": "^2.3.0",
+    "opn": "^5.3.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.4",
@@ -19,7 +21,7 @@
     "socket.io-client": "^2.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -39,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/ethaizone/Scrum-Poker-Board/issues"
   },
-  "homepage": "https://github.com/ethaizone/Scrum-Poker-Board#readme"
+  "homepage": "https://github.com/ethaizone/Scrum-Poker-Board#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
 }

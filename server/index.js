@@ -3,6 +3,8 @@ var http = require('http').Server(app);
 var socket = require('socket.io')(http, { path: '/myapp/socket.io' });
 var proxy = require('http-proxy-middleware');
 
+require('dotenv').config()
+
 var port = 3421;
 
 
@@ -137,10 +139,20 @@ http.listen(port, function () {
 
 var ngrok = require('ngrok');
 
-ngrok.authtoken("", function (err, token) {
+const opn = require('opn');
+console.log(process.env.NGROK_TOKEN, "xxxx")
+
+ngrok.authtoken(process.env.NGROK_TOKEN, function (err, token) {
     if (token) {
         ngrok.connect(port, function (err, url) {
-            console.log("xxxxx" + url)
+            console.log(url, "xxxxxxx")
+
+            opn(url).then(() => {
+
+            });
+
         });
+    } else {
+        console.log(err)
     }
 });
